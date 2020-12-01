@@ -3,7 +3,7 @@ defmodule ExMon.Game.Actions do
   alias ExMon.Game.Actions.Attack
   alias ExMon.Game.Actions.Heal
 
-  def fetch_movie(move)do
+  def fetch_move(move)do
     Game.player()
     |> Map.get(:moves)
     |> find_move(move)
